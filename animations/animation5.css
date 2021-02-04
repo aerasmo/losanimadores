@@ -1,0 +1,50 @@
+html, body {
+  height: 99%;
+}
+
+body {
+    display: ruby;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: royalblue;
+  color: white;
+  box-shadow: 5px 5px 25px #000;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: ease 4s;
+}
+.box .box__blurb {
+  opacity: 1;
+  transform: translateX(70px);
+  transition: opacity 0.3s 1s, transform 0.3s 0.5s;
+}
+.box .rect__blurb {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: opacity 0.3s 1s, transform 0.3s 1s;
+}
+.box:hover {
+  width: 700px;
+  background-color: black;
+  box-shadow: -5px 5px 25px #ff0000;
+}
+.box:hover .box__blurb {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.box:hover .rect__blurb {
+  opacity: 1;
+  transform: translateX(-100px);
+}
