@@ -1,0 +1,43 @@
+.element {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  animation: 
+    pulse 15s linear infinite normal, 
+    /* nudge 5s cubic-bezier(0,0,0.30,1) infinite reverse; */
+    nudge 5s linear infinite reverse;
+  border-radius: 100%;
+}
+
+
+@keyframes pulse {
+    10%  {background-color: red;}
+    20%  {background-color: orange;}
+    30%  {background-color: yellow;}
+    40%  {background-color: greenyellow;}
+    50% {background-color: green;}
+    60% {background-color: blue;}
+    70% {background-color: blueviolet;}
+    80% {background-color: blueviolet;}
+    90% {background-color: violet;}
+    100% {background-color: pink;}
+}
+@keyframes nudge {
+  0%, 100% {  transform: translate(-42vw, 0);
+  }
+  50% {
+    transform: translate(42vw, 0);
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
