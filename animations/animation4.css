@@ -1,6 +1,8 @@
 .element {
   height: 200px;
   width: 200px;
+  margin: 0 auto;
+  margin-top: 35vh;
   background-color: red;
   animation: 
     pulse 15s linear infinite normal, 
@@ -36,8 +38,5 @@ html, body {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
 }

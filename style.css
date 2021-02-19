@@ -13,7 +13,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav ul a {
   float: left;
   color: #FFFFFF;
   text-align: center;
